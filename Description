@@ -1,0 +1,48 @@
+
+🧠 SRAM Overview
+
+Static Random Access Memory (SRAM) is a type of volatile memory widely used in high-speed applications such as cache memory due to its low latency and high performance. Unlike DRAM, SRAM does not require periodic refreshing, making it faster and more reliable for critical operations.
+
+An SRAM cell is typically implemented using a 6-transistor (6T) CMOS configuration, consisting of two cross-coupled inverters and access transistors. These cells are organized in the form of arrays, where efficient read and write operations depend heavily on peripheral circuits such as decoders, sense amplifiers, and word/bit lines.
+
+⚙️ SRAM Architecture
+
+A typical SRAM array consists of:
+
+Memory Cell Array (6T SRAM Cells)
+Row Decoder (Word Line Selection)
+Column Decoder (Bit Line Selection)
+Sense Amplifiers (Read Operation)
+Write Drivers (Write Operation)
+
+The decoder plays a crucial role in selecting the correct memory location by activating a specific word line based on the input address.
+
+⚡ Importance of Decoder in SRAM
+
+The overall performance of an SRAM largely depends on the efficiency of its decoder. Since the decoder lies in the critical path of memory access, it directly affects:
+
+⏱️ Access time (delay)
+⚡ Power consumption
+📐 Area utilization
+
+This project specifically focuses on improving decoder efficiency to enhance overall SRAM performance.
+
+🔍 Key Design Considerations
+Speed Optimization: Minimizing propagation delay in word line activation
+Power Efficiency: Reducing dynamic and leakage power
+Area Reduction: Using compact logic styles to minimize transistor count
+Scalability: Supporting larger memory arrays
+🧪 Technology & Implementation
+
+The SRAM and decoder designs are implemented using:
+
+CMOS / FinFET Technologies
+Cadence Virtuoso (Schematic & Simulation)
+SPICE-based performance analysis
+📈 Role in This Project
+
+In this work, SRAM serves as the target application, where optimized compact decoders are integrated and evaluated. The goal is to demonstrate how improved decoder architectures can significantly enhance:
+
+Memory access speed
+Power efficiency
+Overall system performance
